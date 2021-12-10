@@ -46,8 +46,8 @@ local offset = 1
 local tmp = bin
 while #tmp ~= 1 do
     tmp = extract_best(tmp, offset, false)
-    for _, value in pairs(tmp) do io.write(value .. "\n") end
-    io.write("\n\n")
+    -- for _, value in pairs(tmp) do io.write(value .. "\n") end
+    -- io.write("\n\n")
     offset = offset + 1
 end
 
@@ -57,8 +57,8 @@ offset = 1
 local tmp2 = bin
 while #tmp2 ~= 1 do
     tmp2 = extract_best(tmp2, offset, true)
-    for _, value in pairs(tmp2) do io.write(value .. "\n") end
-    io.write("\n\n")
+    -- for _, value in pairs(tmp2) do io.write(value .. "\n") end
+    -- io.write("\n\n")
     offset = offset + 1
 end
 

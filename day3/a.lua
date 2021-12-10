@@ -21,11 +21,11 @@ while true do
         end
     end
 end
-io.write("---1-COUNT---\n")
-for _, value in ipairs(o_count) do io.write(value .. " ") end
-io.write("\n---0-COUNT---\n")
-for _, value in ipairs(z_count) do io.write(value .. " ") end
-io.write("\n")
+-- io.write("---1-COUNT---\n")
+-- for _, value in ipairs(o_count) do io.write(value .. " ") end
+-- io.write("\n---0-COUNT---\n")
+-- for _, value in ipairs(z_count) do io.write(value .. " ") end
+-- io.write("\n")
 
 local gamma_rate = {}
 local epsilon_rate = {}
@@ -41,21 +41,21 @@ end
 
 local gamma_total = 0
 local epsilon_total = 0
-io.write("\n---GAMMA---\n")
+-- io.write("\n---GAMMA---\n")
 for i, value in ipairs(gamma_rate) do
-    io.write(value .. " ")
+    -- io.write(value .. " ")
     if value == 1 then
         gamma_total = gamma_total + math.pow(2, #gamma_rate - i)
     end
 end
-io.write("\n---EPSILON---\n")
+-- io.write("\n---EPSILON---\n")
 for i, value in ipairs(epsilon_rate) do
-    io.write(value .. " ")
+    -- io.write(value .. " ")
     if value == 1 then
         epsilon_total = epsilon_total + math.pow(2, #epsilon_rate - i)
     end
 end
-io.write("\n")
+-- io.write("\n")
 
 io.write("e: " .. tostring(epsilon_total) .. " g:" .. tostring(gamma_total) ..
              " ans:" .. tostring(epsilon_total * gamma_total))
